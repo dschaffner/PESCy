@@ -1,7 +1,6 @@
 import numpy as np
 from math import factorial
 from calcS import calcS
-from collections import Counter
 
 def calcCofH(data,n,delay=1):
     '''
