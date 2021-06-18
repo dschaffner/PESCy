@@ -8,6 +8,6 @@
 """
 The PESCy package
 """
-__all__ = ["Cmaxmin","calcCofH","calcH","calcH_fromPatternCount","calcPESCcurves","calcS","calcS_fromPatternCount","constructPatternCount"]
+__all__ = ["Cmaxmin","calcCofH","calcH","calcPESCcurves","calcS","calcS_fromPatternCount","constructPatternCount"]
 
-from PESCy import Cmaxmin,calcCofH,calcH,calcH_fromPatternCount,calcPESCcurves,calcS,calcS_fromPatternCount,constructPatternCount
+from PESCy import Cmaxmin,calcCofH,calcH,calcPESCcurves,calcS,calcS_fromPatternCount,constructPatternCount
