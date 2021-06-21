@@ -8,6 +8,6 @@
 """
 The PESCy package
 """
-__all__ = ["PESCy_functions"]
+__all__ = ["PESCy_functions","timeseries"]
 
-from PESCy import PESCy_functions
+from PESCy import PESCy_functions,timeseries
