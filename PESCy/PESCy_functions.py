@@ -45,7 +45,7 @@ def calcS(data,n=5,delay=1):
     count=Counter(A)
     #print len(count)
     #Calculate S from the count
-    for q in count.itervalues():
+    for q in iter(count.values()):
         q*=invPtot #convert to probability
         S += -q * np.log2(q)
         q+=1./N
@@ -85,7 +85,7 @@ def calcH(data,n=5,delay=1):
     count=Counter(A)
     #print len(count)
     #Calculate S from the count
-    for q in count.itervalues():
+    for q in iter(count.values()):
         q*=invPtot #convert to probability
         S += -q * np.log2(q)
         q+=1./N
