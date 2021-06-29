@@ -57,7 +57,6 @@ def generateLorenz(dt=0.01,num_steps=10000,s=10,r=20,b=2.667):
 
 def generateHenon(N):
 
-    import numpy as np
     X = np.zeros((2,N))
     X[0,0] = 1.
     X[1,0] = 1.
@@ -67,3 +66,17 @@ def generateHenon(N):
         X[0,i] = 1. - a * X[0,i-1] ** 2. + X[1,i-1]
         X[1,i] = b * X[0,i-1]
     return X
+
+def generateTent(N):
+    w=0.1847
+    X = np.zeros([N])
+    X[0] = 0.1
+
+    for i in range(1,N):
+        if X[i-1] < w:
+            X[i] = X[i-1]/w
+        else:
+            X[i] = (1 - X[i-1])/(1 - w)
+    return X
+	#address = '/Users/peterweck/Documents/extimeseries/tent'+str(N)+'.npz'
+	#np.savez_compressed(address, x=X)
