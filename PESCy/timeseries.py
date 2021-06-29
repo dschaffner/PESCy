@@ -54,3 +54,16 @@ def generateLorenz(dt=0.01,num_steps=10000,s=10,r=20,b=2.667):
         zs[i + 1] = zs[i] + (z_dot * dt)
         
     return xs,ys,zs
+
+def generateHenon(N):
+
+    import numpy as np
+    X = np.zeros((2,N))
+    X[0,0] = 1.
+    X[1,0] = 1.
+    a = 1.4
+    b = 0.3
+    for i in range(1,N):
+        X[0,i] = 1. - a * X[0,i-1] ** 2. + X[1,i-1]
+        X[1,i] = b * X[0,i-1]
+    return X
