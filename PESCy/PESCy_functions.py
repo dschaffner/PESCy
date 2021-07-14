@@ -159,8 +159,8 @@ def generateCurves(n=5):				# Creates a blank CH plane with maximum and minimum 
 
 	plt.figure(1)
 	plt.plot(Cminx,Cminy,'k-',Cmaxx,Cmaxy,'k-')
-	plt.xlabel("Entropy", fontsize=15)
-	plt.ylabel("Jensen-Shannon Complexity", fontsize=15)
+	plt.xlabel(r"Normalized Permutation Entropy, $H$", fontsize=12)
+	plt.ylabel(r"Statistical Complexity, $C$", fontsize=12)
 	#plt.axis([0,1.0,0,0.45])
 	#plt.xticks(np.arange(0,1.1,0.1))
 	#plt.yticks(np.arange(0,0.45,0.05))
