@@ -65,7 +65,7 @@ def generateHenon(N):
     for i in range(1,N):
         X[0,i] = 1. - a * X[0,i-1] ** 2. + X[1,i-1]
         X[1,i] = b * X[0,i-1]
-    return X
+    return X[0,:]
 
 def generateTent(N):
     w=0.1847
