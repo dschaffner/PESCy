@@ -135,7 +135,7 @@ def Cmaxmin(nsteps,n):
         /((1 + 1./N)*np.log2(N+1) - 2*np.log2(2*N) + np.log2(N))	
 		
     for i in np.arange(1,N):
-        for l in np.range(nsteps):
+        for l in np.arange(nsteps):
             pk = l*(1./(N-i+1.))/nsteps
             pj = (1. - pk)/(N - i)
             if pk ==0.:
