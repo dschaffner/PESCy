@@ -5,7 +5,7 @@ __all__ = ["PESCy"]
 
 import pkg_resources
 
-from PESCy import PESCy
+#from PESCy import PESCy
 
 # --- Define version -----------------------------------------------------------
 try:
