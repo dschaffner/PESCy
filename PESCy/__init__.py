@@ -10,4 +10,4 @@ The PESCy package
 """
 __all__ = ["PESCy_functions","timeseries"]
 
-from PESCy import PESCy_functions,timeseries
+from PESCy.PESCy import PESCy_functions,timeseries
