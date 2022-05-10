@@ -168,7 +168,7 @@ def generateCurves(n=5):				# Creates a blank CH plane with maximum and minimum 
 	#plt.savefig(str(savefile)+'.png')
     
     
-def constructPatternCount(data,n=5,delay=1):
+def constructPatternCount(data,n=5,delay=1):#originally called PE_dist(), but added n output for new version
     '''
     
 
@@ -203,7 +203,7 @@ def constructPatternCount(data,n=5,delay=1):
     count=Counter(A)
     return count,Ptot,n
 
-def calcS_fromPatternCount(count,tot_perms,n):
+def calcS_fromPatternCount(count,tot_perms,n):#originally called PE_calc_only(), though n input was added for this new version
     '''
     
 
